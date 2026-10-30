@@ -1,5 +1,7 @@
 # Stripe Design Clone
 
+<img width="947" height="435" alt="Screenshot 2026-10-30 194506" src="https://github.com/user-attachments/assets/e6309bde-8406-47bd-bab0-795af8ad539b" />
+
 A front-end recreation of the Stripe website, built with HTML and CSS.
 
 This project is part of my learning and portfolio work. I chose Stripe

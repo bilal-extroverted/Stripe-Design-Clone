@@ -23,11 +23,11 @@ html, body { overflow-x: hidden; }
     width: 100%;
     height: 76px;
     background-color: rgba(237, 199, 199, 0.1);
-    border-bottom: 2px solid #e5edf5;
+    border-bottom: 1px solid #e5edf5;
     background-color: transparent;
 }
 
-#nevbar {
+#navbar {
         height: 64px;
     border-radius: 6px;
     background-color: transparent;
@@ -41,24 +41,24 @@ html, body { overflow-x: hidden; }
     padding: 0 16px;
 }
 
-.nevbar {
+.navbar-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#nevbar > * {
+#navbar > * {
     flex-shrink: 0;
 }
 
-#nevbar:hover {
+#navbar:hover {
     background-color: white;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------logo------------- */
 
-.logo-layout {
+.logo-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +115,7 @@ html, body { overflow-x: hidden; }
 }
 
 /* Chevron Arrow */
-.arrow {
+.nav-arrow {
   width: 6px;
   height: 6px;
   border-right: 2px solid #0a2540;
@@ -163,14 +163,14 @@ html, body { overflow-x: hidden; }
   transform: translateX(-50%) translateY(0);
 }
 
-.nav-item:hover .arrow {
+.nav-item:hover .nav-arrow {
   transform: rotate(-135deg);
   margin-top: 3px;
 }
 
 /* ------------nev cta button--------------- */
 
-#nev-button-1 {
+#sign-in-button {
     margin-left: auto;
     
     height: 40px;
@@ -187,12 +187,12 @@ html, body { overflow-x: hidden; }
 
 }
 
-#nev-button-1:hover {
+#sign-in-button:hover {
     border: 1px solid rgb(64, 50, 200);
     color: rgb(64, 50, 200);
 }
 
-#nev-button-2 {
+#contact-sales-button {
     margin-right: 20px;
     margin-left: 10px;
     height: 40px;
@@ -208,14 +208,14 @@ html, body { overflow-x: hidden; }
 
 /* ---------------contant-------------- */
 
-.contant-box-0 {
+.hero-wrapper {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
 }
 
-.contant-box-1 {
+.hero-content {
     width: calc(100% - 270px); max-width: 1266px;
     min-height: 485px;
     background-color: transparent;
@@ -224,13 +224,13 @@ html, body { overflow-x: hidden; }
     padding-bottom: 36px;
     padding-left: 16px;
     padding-right: 16px;
-    border-bottom: 2px solid #e5edf5;
-    border-left: 2px solid #e5edf5;
-    border-right: 2px solid #e5edf5;
+    border-bottom: 1px solid #e5edf5;
+    border-left: 1px solid #e5edf5;
+    border-right: 1px solid #e5edf5;
     
 }
 
-#hero-txt {
+#hero-gdp-text {
     letter-spacing: -0.42px;
     margin-top: 50px;
     margin-left: 100px;
@@ -239,13 +239,13 @@ html, body { overflow-x: hidden; }
     font-size: 14px;
 }
 
-#hero-txt-light {
+#hero-gdp-number {
     margin-left: 2px;
     color: #73777F;
     font-size: 14px;
 }
 
-#hero-txt2 {
+#hero-title {
     
     letter-spacing: -1.5px;
     margin-top: 50px;
@@ -255,7 +255,7 @@ html, body { overflow-x: hidden; }
     font-family: "sohne-var", "SF Pro Display", sans-serif;
 }
 
-#hero-txt3 {
+#hero-subtitle {
     margin-right: 270px;
     color: #73777F;
     font-size: 42px;
@@ -264,7 +264,7 @@ html, body { overflow-x: hidden; }
     font-family: "sohne-var", "SF Pro Display", sans-serif;
 }
 
-#hero-button1 {
+#get-started-button {
     margin-left: 100px;
     margin-top: 50px;
     height: 48px;
@@ -277,7 +277,7 @@ html, body { overflow-x: hidden; }
     font-weight: 400;
 }
 
-#hero-button2 {
+#google-signup-button {
     font-weight: 400;
     font-size: 16px;
     height: 48px;
@@ -296,13 +296,13 @@ html, body { overflow-x: hidden; }
 
 
 
-.contant-box2 {
+.logo-strip-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 80px;
     background-color: transparent;
-    border-bottom: 2px solid #e5edf5;
+    border-bottom: 1px solid #e5edf5;
 }
 
 .movin-logo {
@@ -310,14 +310,14 @@ html, body { overflow-x: hidden; }
     width: auto;
 }
 
-#contant-box2-inner {
+#logo-strip {
     display: flex;
     align-items: center;
     background-color: transparent;
     height: 80px;
     width: calc(100% - 270px); max-width: 1266px;
-    border-left: 2px solid #e5edf5;
-    border-right: 2px solid #e5edf5;
+    border-left: 1px solid #e5edf5;
+    border-right: 1px solid #e5edf5;
 }
 
 
@@ -357,14 +357,14 @@ html, body { overflow-x: hidden; }
 /* --------------------contant box 2---------------------- */
 
 
-.contant-box-2 {
+.solutions-wrapper {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
 }
 
-.in-box-sec2 {
+.solutions-content {
     
     width: calc(100% - 270px); max-width: 1266px;
     height: auto;
@@ -372,18 +372,18 @@ html, body { overflow-x: hidden; }
     padding-bottom: 96px;
     padding-left: 16px;
     padding-right: 16px;
-    border-bottom: 2px solid #e5edf5;
-    border-left: 2px solid #e5edf5;
-    border-right: 2px solid #e5edf5;
+    border-bottom: 1px solid #e5edf5;
+    border-left: 1px solid #e5edf5;
+    border-right: 1px solid #e5edf5;
 }
 
-#header-sec2 {
+#solutions-header {
     max-width: 850px;
     height: 100px;
     
 }
 
-.title-sec2 {
+.section-title {
     font-weight: 300;
     letter-spacing: -0.64px;
 
@@ -392,14 +392,14 @@ html, body { overflow-x: hidden; }
   font-weight: 500;
 }
 
-#dark-test-sec2 {
+.title-dark-text {
   font-weight: 300;
   line-height: 35.2px;
   letter-spacing: -0.64px;
   color: #0a2540; 
 }
 
-#light-test-sec2 {
+.title-light-text {
     font-weight: 300;
   line-height: 35.2px;
   letter-spacing: -0.64px;
@@ -409,7 +409,7 @@ html, body { overflow-x: hidden; }
 /* -------------------card sec 2-1-------------- */
 
 
-.in-box-sec2-2 {
+.cards-row-1 {
     margin-top: 96px;
             height: auto;
     display: flex;
@@ -418,25 +418,25 @@ html, body { overflow-x: hidden; }
     justify-content: normal;
 }
 
-.card-1 {
+.payments-card {
         height: 676px;
     background-image: url("/esset/card-1-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid #e5edf5;
+    border: 1px solid #e5edf5;
     border-radius: 8px;
     width: auto;
     flex: 816 1 0;
     min-width: 0;
 }
 
-.card-2 {
+.billing-card {
     
         height: 676px;
     background-image: url("/esset/card-2-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid #e5edf5;
+    border: 1px solid #e5edf5;
     border-radius: 8px;
     width: auto;
     flex: 400 1 0;
@@ -445,7 +445,7 @@ html, body { overflow-x: hidden; }
 
 /* -------------------card sec 2-2-------------- */
 
-.in-box-sec2-3 {
+.cards-row-2 {
     margin-top: 18px;
             height: auto;
     display: flex;
@@ -454,19 +454,19 @@ html, body { overflow-x: hidden; }
     justify-content: normal;
 }
 
-.card-3 {
+.agentic-card {
         height: 676px;
     background-image: url("/esset/card-3-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid #e5edf5;
+    border: 1px solid #e5edf5;
     border-radius: 8px;
     width: auto;
     flex: 1 1 0;
     min-width: 0;
 }
 
-.card-4 {
+.issuing-card {
     
         height: 676px;
     background-image: url("/esset/card-4-img.jpg");
@@ -479,13 +479,13 @@ html, body { overflow-x: hidden; }
     min-width: 0;
 }
 
-.card-5 {
+.stablecoin-card {
     
         height: 676px;
     background-image: url("/esset/card-5-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid #e5edf5;
+    border: 1px solid #e5edf5;
     border-radius: 8px;
     width: auto;
     flex: 1 1 0;
@@ -493,7 +493,7 @@ html, body { overflow-x: hidden; }
 }
 
 /* -------------------card sec 2-3-------------- */
-.in-box-sec2-4 {
+.cards-row-3 {
     margin-top: 18px;
     justify-content: space-between;
         height: auto;
@@ -501,40 +501,40 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-.card-6 {
+.embed-card {
     
         height: 450px;
     background-image: url("/esset/card-6-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid #e5edf5;
+    border: 1px solid #e5edf5;
     border-radius: 8px;
     width: 100%;
 }
 
 /* -----------------------section 6-------------------------- */
 
-.section-2-main {
+.ai-banner-wrapper {
     height: 560px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.section-2 {
+.ai-banner-box {
     height: 560px;
     width: calc(100% - 270px); max-width: 1266px;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 16px;
     padding-right: 16px;
-    border-left: 2px solid #e5edf5;
-    border-right: 2px solid #e5edf5;
-    border-bottom: 2px solid #e5edf5;
+    border-left: 1px solid #e5edf5;
+    border-right: 1px solid #e5edf5;
+    border-bottom: 1px solid #e5edf5;
     
 }
 
-.card-7-contant {
+.ai-banner {
     height: 400px;
         background-image: url("/esset/card-7-img.jpg");
     background-size: cover;
@@ -545,7 +545,7 @@ html, body { overflow-x: hidden; }
 
 /* --------------section-3-------------------------------- */
 
-.section-3-main {
+.stats-wrapper {
     height: 932px;
     width: 100%;
     display: flex;
@@ -554,25 +554,25 @@ html, body { overflow-x: hidden; }
     
 }
 
-.section-3 {
+.stats-content {
     padding-top: 80px;
     padding-left: 16px;
     padding-right: 16px;
     height: 932px;
     width: calc(100% - 270px); max-width: 1266px;
     background-color: transparent;
-    border-left: 2px solid #e5edf5;
-    border-bottom: 2px solid #e5edf5;
+    border-left: 1px solid #e5edf5;
+    border-bottom: 1px solid #e5edf5;
 }
 
 /* --------------------section-3-heading-and-stats-section------------------------------ */
 
-.text-stats-section {
+.stats-top {
     height: 378px;
     width: 100%;
 }
 
-.text-heading {
+.stats-heading-box {
     height: 120px;
         background-color: transparent;
     
@@ -582,7 +582,7 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-#text-heading-txt {
+#stats-heading-text {
     color: black;
     font-size: 3.5rem;
     font-weight: 300;
@@ -594,9 +594,9 @@ html, body { overflow-x: hidden; }
 
 }
 
-.stats-section {
-    border-top: 2px solid #e5edf5;
-    border-bottom: 2px solid #e5edf5;
+.stats-row {
+    border-top: 1px solid #e5edf5;
+    border-bottom: 1px solid #e5edf5;
     margin-top: 73px;
     height: 185px;
         background-color: transparent;
@@ -605,7 +605,7 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-.stats-container-1 {
+.stat-item {
     height: 185px;
         background-color: transparent;
     padding-top: 40px;
@@ -614,14 +614,14 @@ html, body { overflow-x: hidden; }
     flex: 1 1 0;
 }
 
-#stats-heading {
+.stat-number {
     font-size: 48px;
     color: black;
     text-align: center;
     letter-spacing: -0.96px;
 }
 
-#stats-text {
+.stat-label {
     font-size: 1rem;
     color: black;
     text-align: center;
@@ -629,7 +629,7 @@ html, body { overflow-x: hidden; }
 }
 
 /* ------------------object-animation------------------ */
-.object-animation {
+.stats-image {
   position: relative;
   background-image: url("/esset/card-8-img.jpg");
   background-size: cover;
@@ -640,14 +640,14 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-.object-animation canvas {
+.stats-image canvas {
   width: 100%;
   height: 100%;
   display: block;
 }
 
 
-.section-4-heading {
+.powering-wrapper {
     width: 100%;
     height: 230px;
     background-color: transparent;
@@ -655,20 +655,20 @@ html, body { overflow-x: hidden; }
     justify-content: center;
 }
 
-.section-4-heading-in {
+.powering-content {
     width: calc(100% - 270px); max-width: 1266px;
     height: 230px;
     background-color: transparent;
-    border-left: 2px solid #e5edf5;
-    border-right: 2px solid #e5edf5;
-    border-bottom: 2px solid #e5edf5;
+    border-left: 1px solid #e5edf5;
+    border-right: 1px solid #e5edf5;
+    border-bottom: 1px solid #e5edf5;
     display: flex;
     align-items: center;
     padding-left: 16px;
     padding-right: 16px;
 }
 
-.section-4-heading-txt1 {
+.powering-title {
     
     color: black;
     font-size: 2rem;
@@ -677,7 +677,7 @@ html, body { overflow-x: hidden; }
     max-width: 720px;
 }
 
-.section-4-heading-txt {
+.powering-title-light {
     color: #73777F;
     font-size: 2rem;
     font-weight: 400;
@@ -687,7 +687,7 @@ html, body { overflow-x: hidden; }
 
 /* --------------section-4-------------- */
 
-.section-4-main {
+.enterprise-wrapper {
     width: 100%;
     height: auto;
     display: flex;
@@ -696,13 +696,13 @@ html, body { overflow-x: hidden; }
     background-color: transparent;
 }
 
-.section-4-in {
+.enterprise-content {
     width: calc(100% - 270px); max-width: 1266px;
     padding-top: 96px;
     padding-left: 16px;
     padding-right: 16px;
-    border-left: 2px solid #e5edf5;
-    border-right: 2px solid #e5edf5;
+    border-left: 1px solid #e5edf5;
+    border-right: 1px solid #e5edf5;
     height: auto;
     /* colour in */
     background-color: transparent;  
@@ -710,34 +710,34 @@ html, body { overflow-x: hidden; }
 }
 
 
-.sec-4-box-1 {
+.enterprise-box {
     height: 220px;
     
 
 }
 
-.section4-2 {
+.enterprise-row {
     background-color: transparent;
         height: 200px;
     display: flex;
     width: 100%;
 }
 
-.section4-2-1 {
+.enterprise-left {
     background-color: transparent;
         height: 200px;
     width: auto;
     flex: 1 1 0;
 }
 
-.section4-2-2 {
+.enterprise-right {
     background-color: transparent;
         height: 200px;
     width: auto;
     flex: 1 1 0;
 }
 
-#section4-2-2-3 {
+#enterprise-text-box {
         height: 100px;
     display: flex;
     align-items: center;
@@ -746,7 +746,7 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-#section4-2-2-txt {
+#enterprise-text {
     font-size: 1.2rem;
     color: #73777F;
     width: 100%;
@@ -756,7 +756,7 @@ html, body { overflow-x: hidden; }
 
 
 
-#section4-2-1-in {
+#enterprise-title-box {
     background-color: transparent;
         height: 100px;
     display: flex;
@@ -764,7 +764,7 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-#section4-2-1-in-txt {
+#enterprise-title {
     font-size: 1.5rem;
     background-color: transparent;
     color: #73777F;
@@ -772,14 +772,14 @@ html, body { overflow-x: hidden; }
 }
 
 
-#section4-2-1-in {
+#enterprise-title-box {
     background-color: transparent;
        
     height: 100px;
     width: 100%;
 }
 
-#section4-2-2-in-btn {
+#enterprise-button {
     background-color: #533afd;
     width: 212px;
     height: 48px;
@@ -792,7 +792,7 @@ html, body { overflow-x: hidden; }
 
 /* --------------------section-5------------------------------ */
 
-.section-5 {
+.hertz-wrapper {
     width: 100%;
     height: 700px;
     background-color: transparent;
@@ -802,7 +802,7 @@ html, body { overflow-x: hidden; }
 
 }
 
-.section-5-in {
+.hertz-content {
     width: calc(100% - 270px); max-width: 1266px;
     height: 700px;
     background-color: transparent;
@@ -813,7 +813,7 @@ html, body { overflow-x: hidden; }
     padding-right: 16px;
 }
 
-.section-5-first-box {
+.hertz-header {
     height: 40px;
         background-color: transparent;
     display: flex;
@@ -821,7 +821,7 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-#sec-5-logo-box {
+#hertz-logo {
     height: 40px;
     width: 40px;
     background-color: yellow;
@@ -831,19 +831,19 @@ html, body { overflow-x: hidden; }
     border-radius: 4px;
 }
 
-#sec-5-logo-box-txt {
+#hertz-logo-text {
     font-size: 26px;
     font-weight: 700;
     font-style: italic;
 }
 
-#sec-5-first-box-txt {
+#hertz-title {
     font-size: 22px;
     font-weight: 550;
     margin-left: 16px;
 }
 
-#sec-5-btn {
+#hertz-button {
     margin-left: auto;
     margin-right: 1px;
     height: 40px;
@@ -859,7 +859,7 @@ html, body { overflow-x: hidden; }
 }
 
 
-.section-5-img {
+.hertz-image {
         height: 532px;
     border-radius: 6px;
     margin-top: 30px;
@@ -870,13 +870,13 @@ html, body { overflow-x: hidden; }
 }
 
 
-.sec-5-in3 {
+.hertz-stats {
     height: 100%;
     display: flex;
     margin-top: 30px;
 }
 
-#sec-5-in3-lighttext {
+.hertz-stat-light {
     margin-left: 150px;
     font-weight: 400;
     font-size: 16px;
@@ -891,7 +891,7 @@ html, body { overflow-x: hidden; }
 
 /* ---------------------------section 6 ------------------------ */
 
-.section-6-main {
+.customers-wrapper {
     width: 100%;
         background-color: transparent;
     display: flex;
@@ -900,7 +900,7 @@ html, body { overflow-x: hidden; }
     min-height: 570px;
 }
 
-.section-6-in {
+.customers-content {
     width: calc(100% - 270px); max-width: 1266px;
         background-color: white;
     border-left: 2px solid #e5edf5;
@@ -911,7 +911,7 @@ html, body { overflow-x: hidden; }
     min-height: 570px;
 }
 
-.contenar-1 {
+.customer-row {
         height: 72px;
     padding-top: 17px;
     padding-bottom: 17px;
@@ -923,7 +923,7 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-.contaner-box {
+.customer-logo {
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -931,13 +931,13 @@ html, body { overflow-x: hidden; }
     border-radius: 4px;
 }
 
-#contenar-1-txt {
+.customer-title {
     font-size: 22px;
     margin-left: 8px;
     font-weight: 500;
 }
 
-.contaner-box-add {
+.customer-plus-button {
     width: 38px;
     height: 40px;
     background-color: #E2E4FF;
@@ -951,13 +951,13 @@ html, body { overflow-x: hidden; }
 }
 
 
-#section-6-main-txt {
+#experts-heading {
     margin-top: 50px;
     font-size: 26px;
     font-weight: 500;
 }
 
-.contenar-2 {
+.services-row {
             margin-top: 40px;
     background-color: transparent;
     display: flex;
@@ -967,7 +967,7 @@ html, body { overflow-x: hidden; }
     gap: 16px;
 }
 
-.contenar-2-box1 {
+.service-card {
             
    
     background-color: transparent;
@@ -976,7 +976,7 @@ html, body { overflow-x: hidden; }
     height: auto;
 }
 
-.contenar-2-box1-logo {
+.service-icon {
     border-radius: 4px;
     width: 40px;
     height: 40px;
@@ -987,7 +987,7 @@ html, body { overflow-x: hidden; }
     border: 2px solid #D6D9FC;
 }
 
-.contenar-2-box1-txt {
+.service-text {
     display: flex;
     align-items: center;
     width: 100%;
@@ -995,7 +995,7 @@ html, body { overflow-x: hidden; }
     padding: 12px 0;
 }
 
-.contenar-2-box1-btn {
+.service-link {
    
     display: flex;
    color: rgb(46, 43, 140);
@@ -1007,7 +1007,7 @@ html, body { overflow-x: hidden; }
 
 /* -------------------------section-8--------------------------- */
 
-.section-8 {
+.startups-wrapper {
     width: 100%;
         display: flex;
     justify-content: center;
@@ -1015,7 +1015,7 @@ html, body { overflow-x: hidden; }
     min-height: 1188px;
 }
 
-.section-8-in {
+.startups-content {
     width: calc(100% - 270px); max-width: 1266px;
         border-top: 2px solid #E5EDF5;
     border-left: 2px solid #E5EDF5;
@@ -1025,21 +1025,21 @@ html, body { overflow-x: hidden; }
     min-height: 1188px;
 }
 
-.section8-box1 {
+.section-header {
         height: 320px;
     background-color: transparent;
     display: flex;
     width: 100%;
 }
 
-.section8-box1-in1 {
+.section-header-left {
     padding-left: 16px;
         height: 320px;
     background-color: transparent;
     width: 50%;
 }
 
-.section8-box1-in2 {
+.section-header-right {
             height: 320px;
     background-color: transparent;
     display: flex;
@@ -1048,7 +1048,7 @@ html, body { overflow-x: hidden; }
     padding-left: 100px;
 }
 
-#section8-box1-in1-btn {
+.header-button {
     width: 200px;
     border-radius: 6px;
     border: none;
@@ -1061,14 +1061,14 @@ html, body { overflow-x: hidden; }
 }
 
 
-#section8-box1-in1-txt {
+.header-title {
     margin-top: 80px;
     font-size: 26px;
     font-weight: 400;
 }
 
 
-#section8-box1-in2-txt {
+.header-text {
     margin-bottom: 50px;
     font-size: 18px;
     font-weight: 400;
@@ -1078,7 +1078,7 @@ html, body { overflow-x: hidden; }
 /* ----- */
 
 
-.section8-conteainer-2 {
+.startup-images-row {
     height: 448px;
     margin-left: 16px;
     width: auto;
@@ -1087,7 +1087,7 @@ html, body { overflow-x: hidden; }
     margin-right: 16px;
 }
 
-.section8-conteainer-2-card {
+.startup-image {
     height: 448px;
     margin-left: 10px;
     border-radius: 6px;
@@ -1098,7 +1098,7 @@ html, body { overflow-x: hidden; }
 }
 
 
-.section8-conteainer-3 {
+.startup-stories-row {
     height: 80px;
     margin-left: 16px;
     width: auto;
@@ -1107,7 +1107,7 @@ html, body { overflow-x: hidden; }
     margin-right: 16px;
 }
 
-.section8-conteainer-3-box-1 {
+.startup-story {
     height: 80px;
     margin-left: 10px;
     
@@ -1116,14 +1116,14 @@ html, body { overflow-x: hidden; }
     flex: 1 1 0;
 }
 
-#section8-conteainer-3-box-1-txt {
+.startup-story-text {
     margin-top: 20px;
     color: rgb(6, 27, 49);
     font-size: 1rem;
     font-weight: 400;
 }
 
-.section8-conteainer-3-box-1-btn {
+.startup-story-link {
     margin-top: 7px;
     height: 30px;
     width: auto;
@@ -1136,7 +1136,7 @@ html, body { overflow-x: hidden; }
     font-weight: 600;
 }
 
-.section8-conteainer-4 {
+.startup-banners-row {
         height: 168px;
     margin-top: 100px;
     background-color: transparent;
@@ -1146,7 +1146,7 @@ html, body { overflow-x: hidden; }
     margin-right: 16px;
 }
 
-.section8-conteainer-4-box1 {
+.startup-banner {
         height: 168px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1156,7 +1156,7 @@ html, body { overflow-x: hidden; }
 }
 
 
-.section-9 {
+.platforms-wrapper {
     width: 100%;
         display: flex;
     justify-content: center;
@@ -1165,19 +1165,19 @@ html, body { overflow-x: hidden; }
     min-height: 1650px;
 }
 
-.section-9-in {
+.platforms-content {
     width: calc(100% - 270px); max-width: 1266px;
         background-color: transparent;
-    border-bottom: 2px dotted #E5EDF5;
-    border-right: 2px solid #E5EDF5;
-    border-left: 2px solid #E5EDF5;
+    border-bottom: 1px dotted #E5EDF5;
+    border-right: 1px solid #E5EDF5;
+    border-left: 1px solid #E5EDF5;
     padding-left: 16px;
     padding-right: 16px;
     height: auto;
     min-height: 1650px;
 }
 
-.section-9-image {
+.platforms-image {
         height: 532px;
     background-image: url(/esset/section-9-img.jpg);
     background-size: cover;
@@ -1186,7 +1186,7 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-.section-9-container-1 {
+.guides-row {
     margin-top: 30px;
         height: 160px;
     background-color: transparent;
@@ -1195,13 +1195,13 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-.section-9-container-1-sec-4-box-1 {
+.guide-card {
         height: 160px;
     background-color: transparent;
     width: 32%;
 }
 
-.section-9-container-1-logobox {
+.guide-icon {
     border: 2px solid #73777F;
     display: flex;
     justify-content: center;
@@ -1213,14 +1213,14 @@ html, body { overflow-x: hidden; }
     border-radius: 6px;
 }
 
-.section-9-container-1-lightparagraph {
+.guide-text {
     margin-top: 12px;
     font-size: 16px;
     color: #666666;
     font-weight: 400;
 }
 
-.section-9-container-1-button {
+.guide-button {
     margin-top: 12px;
     background-color: transparent;
     border: none;
@@ -1234,7 +1234,7 @@ html, body { overflow-x: hidden; }
     border-radius: 6px;
 }
 
-.section9-container1 {
+.quote-box {
     margin-top: 80px;
             background-color: transparent;
     
@@ -1244,14 +1244,14 @@ html, body { overflow-x: hidden; }
     min-height: 307px;
 }
 
-.outersheel {
+.quote-part {
     
         display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.section9-container1-logo {
+.quote-logo {
     margin-top: 20px;
     
     width: 48px;
@@ -1263,7 +1263,7 @@ html, body { overflow-x: hidden; }
     
 }
 
-.section9-container1-text {
+.quote-text {
     padding-left: 150px;
     padding-right: 150px;
     margin-top: 20px;
@@ -1273,14 +1273,14 @@ html, body { overflow-x: hidden; }
     font-weight: 500;
 }
 
-.section9-container1-smaltext {
+.quote-author {
     margin-top: 20px;
     font-size: 18px;
     color: rgb(100, 116, 141);
     font-weight: 400;
 }
 
-.section9-continer3 {
+.partner-logos-row {
     height: 100px;
         margin-top: 50px;
     background-color: transparent;
@@ -1288,7 +1288,7 @@ html, body { overflow-x: hidden; }
     width: 100%;
 }
 
-.section9-continer3-box1 {
+.partner-logo {
     height: 100px;
         background-size: cover;
     background-repeat: no-repeat;
@@ -1298,7 +1298,7 @@ html, body { overflow-x: hidden; }
 
 /* ---------------------------------section-10------------------------------- */
 
-.section10 {
+.news-wrapper {
     width: 100%;
         background-color: transparent;
     display: flex;
@@ -1306,24 +1306,24 @@ html, body { overflow-x: hidden; }
     height: auto;
     min-height: 850px;
 }
-.section-10-in {
-        width: calc(100% - 270px); max-width: 1266px;
-    border-left: 2px solid #DCE4EB;
-    border-right: 2px solid #DCE4EB;
-    border-bottom: 2px solid #DCE4EB;
+.news-content {
+    width: calc(100% - 270px); max-width: 1266px;
+    border-left: 1px solid #DCE4EB;
+    border-right: 1px solid #DCE4EB;
+    border-bottom: 1px solid #DCE4EB;
     background-color: transparent;
     height: auto;
     min-height: 850px;
 }
 
-.section10-container1 {
+.news-top {
     width: 100%;
     height: 250px;
     background-color: transparent;
     display: flex;
 }
 
-.section10-container1-box1 {
+.news-header {
     width: 100%;
     height: 250px;
     background-color: white;
@@ -1331,14 +1331,14 @@ html, body { overflow-x: hidden; }
     display: flex;
 }
 
-.section10-container1-box1-1 {
+.news-header-left {
     background-color: transparent;
     padding-left: 16px;
     height: 90px;
     width: 75%;
 }
 
-.section10-container1-box1-2 {
+.news-header-right {
     background-color: transparent;
     width: 25%;
     height: 120px;
@@ -1359,7 +1359,7 @@ html, body { overflow-x: hidden; }
   color: #0a2540; 
 }
 
-.section10-container1-box2-button {
+.news-arrow-button {
     background-color: #E8E9FF;
     height: 40px;
     width: 40px;
@@ -1368,7 +1368,7 @@ html, body { overflow-x: hidden; }
 
 }
 
-.section-10-image {
+.news-image {
         margin-left: 16px;
     height: 460px;
     border-radius: 6px;
@@ -1380,7 +1380,7 @@ html, body { overflow-x: hidden; }
 
 /* --------------------------------section-11------------------------- */
 
-.section-11 {
+.press-wrapper {
     width: 100%;
         background-color: transparent;
     display: flex;
@@ -1389,9 +1389,9 @@ html, body { overflow-x: hidden; }
     min-height: 1000px;
 }
 
-.section-11-in {
-    border-left: 2px solid #DCE4EB;
-    border-right: 2px solid #DCE4EB;
+.press-content {
+    border-left: 1px solid #DCE4EB;
+    border-right: 1px solid #DCE4EB;
     /* padding-left: 16px;
     padding-right: 16px; */
     /* padding-bottom: 93px; */
@@ -1401,7 +1401,7 @@ html, body { overflow-x: hidden; }
     min-height: 1050px;
 }
 
-.section-11-image {
+.press-image {
         height: 720px;
     background-image: url(/esset/section-11-image.jpg);
     background-size: cover;
@@ -1410,7 +1410,7 @@ html, body { overflow-x: hidden; }
     width: calc(100% - 32px);
 }
 
-.section-12 {
+.footer-wrapper {
     width: 100%;
         background-color: #F8FAFD;
     display: flex;
@@ -1419,21 +1419,21 @@ html, body { overflow-x: hidden; }
     min-height: 400px;
 }
 
-.section12-in {
-    border-left: 2px solid #DCE4EB;
-    border-right: 2px solid #DCE4EB;
+.footer-content {
+    border-left: 1px solid #DCE4EB;
+    border-right: 1px solid #DCE4EB;
     width: calc(100% - 270px); max-width: 1266px;
     height: auto;
     min-height: 400px;
 }
 
-.section-12-sec2 {
+.footer-columns {
     display: flex;
     justify-content: space-between;
 
 }
 
-.section12-1 {
+.footer-products {
     margin-left: 16px;
             background-color: transparent;
     width: auto;
@@ -1441,36 +1441,36 @@ html, body { overflow-x: hidden; }
     height: auto;
 }
 
-.section12-2 {
+.footer-solutions {
             background-color: transparent;
     width: auto;
     flex: 1 1 0;
     height: auto;
 }
 
-.section12-3 {
-            background-color: transparent;
+.footer-resources {
+     background-color: transparent;
     width: auto;
     flex: 1 1 0;
     height: auto;
 }
 
-.section12-4 {
+.footer-company {
     margin-right: 16px;
-            background-color: transparent;
+    background-color: transparent;
     width: auto;
     flex: 1 1 0;
     height: auto;
 }
 
-.section12-1-1 {
+.footer-link {
     height: 16px;
         color: rgb(80, 97, 122);
     margin-top: 8px;
     width: auto;
 }
 
-.section12-1-2 {
+.footer-column-title {
     height: 22px;
     font-weight: 510;
         color: rgb(6, 27, 49);
@@ -1479,7 +1479,7 @@ html, body { overflow-x: hidden; }
     width: auto;
 }
 
-.section12-4-button {
+.footer-sign-in {
     margin-top: 22px;
     height: 30px;
     width: 60px;
@@ -1489,7 +1489,7 @@ html, body { overflow-x: hidden; }
     
 }
 
-.section12-box1 {
+.footer-note {
     padding-top: 35px;
     padding-left: 16px;
     justify-content: center;
@@ -1499,7 +1499,7 @@ html, body { overflow-x: hidden; }
     width: auto;
 }
 
-.section-12-sec1 {
+.footer-note-box {
     height: 130px;
     width: 100%;
     max-width: 900px;

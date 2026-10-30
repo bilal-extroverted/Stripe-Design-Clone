@@ -1,3 +1,4 @@
+html, body { overflow-x: hidden; }
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -5,7 +6,7 @@
 }
 
 .hero {
-    width: 1536px;
+    width: 100%;
     height: auto;
     background-image: url("/wave-fallback-desktop.png");
     background-size: cover;
@@ -19,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1536px;
+    width: 100%;
     height: 76px;
     background-color: rgba(237, 199, 199, 0.1);
     border-bottom: 2px solid #e5edf5;
@@ -27,15 +28,27 @@
 }
 
 #nevbar {
-    width: 1262px;
-    height: 64px;
+        height: 64px;
     border-radius: 6px;
     background-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
 
-    transition: background-color 1s ease; 
+    transition: background-color 1s ease;
+    width: calc(100% - 270px);
+    max-width: 1266px;
+    padding: 0 16px;
+}
+
+.nevbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#nevbar > * {
+    flex-shrink: 0;
 }
 
 #nevbar:hover {
@@ -196,15 +209,15 @@
 /* ---------------contant-------------- */
 
 .contant-box-0 {
-    width: 1536;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
 }
 
 .contant-box-1 {
-    width: 1266px;
-    height: 485px;
+    width: calc(100% - 270px); max-width: 1266px;
+    min-height: 485px;
     background-color: transparent;
     /* margin-left: 132px; */
     padding-top: 36px;
@@ -286,7 +299,7 @@
 .contant-box2 {
     display: flex;
     justify-content: center;
-    width: 1536px;
+    width: 100%;
     height: 80px;
     background-color: transparent;
     border-bottom: 2px solid #e5edf5;
@@ -302,7 +315,7 @@
     align-items: center;
     background-color: transparent;
     height: 80px;
-    width: 1266px;
+    width: calc(100% - 270px); max-width: 1266px;
     border-left: 2px solid #e5edf5;
     border-right: 2px solid #e5edf5;
 }
@@ -345,7 +358,7 @@
 
 
 .contant-box-2 {
-    width: 1536px;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -353,7 +366,7 @@
 
 .in-box-sec2 {
     
-    width: 1266px;
+    width: calc(100% - 270px); max-width: 1266px;
     height: auto;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -398,110 +411,119 @@
 
 .in-box-sec2-2 {
     margin-top: 96px;
-    justify-content: space-between;
-    width: 1234px;
-    height: auto;
+            height: auto;
     display: flex;
-    
+    width: 100%;
+    gap: 18px;
+    justify-content: normal;
 }
 
 .card-1 {
-    width: 816px;
-    height: 676px;
+        height: 676px;
     background-image: url("/esset/card-1-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid #e5edf5;
     border-radius: 8px;
+    width: auto;
+    flex: 816 1 0;
+    min-width: 0;
 }
 
 .card-2 {
     
-    width: 400px;
-    height: 676px;
+        height: 676px;
     background-image: url("/esset/card-2-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid #e5edf5;
     border-radius: 8px;
+    width: auto;
+    flex: 400 1 0;
+    min-width: 0;
 }
 
 /* -------------------card sec 2-2-------------- */
 
 .in-box-sec2-3 {
     margin-top: 18px;
-    justify-content: space-between;
-    width: 1234px;
-    height: auto;
+            height: auto;
     display: flex;
-    
-    
+    width: 100%;
+    gap: 18px;
+    justify-content: normal;
 }
 
 .card-3 {
-    width: 400px;
-    height: 676px;
+        height: 676px;
     background-image: url("/esset/card-3-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid #e5edf5;
     border-radius: 8px;
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .card-4 {
     
-    width: 400px;
-    height: 676px;
+        height: 676px;
     background-image: url("/esset/card-4-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid #e5edf5;
     border-radius: 8px;
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .card-5 {
     
-    width: 400px;
-    height: 676px;
+        height: 676px;
     background-image: url("/esset/card-5-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid #e5edf5;
     border-radius: 8px;
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 /* -------------------card sec 2-3-------------- */
 .in-box-sec2-4 {
     margin-top: 18px;
     justify-content: space-between;
-    width: 1234px;
-    height: auto;
+        height: auto;
     display: flex;
+    width: 100%;
 }
 
 .card-6 {
     
-    width: 1232px;
-    height: 450px;
+        height: 450px;
     background-image: url("/esset/card-6-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid #e5edf5;
     border-radius: 8px;
+    width: 100%;
 }
 
 /* -----------------------section 6-------------------------- */
 
 .section-2-main {
     height: 560px;
-    width: 1536px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .section-2 {
     height: 560px;
-    width: 1266px;
+    width: calc(100% - 270px); max-width: 1266px;
     padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 16px;
@@ -514,18 +536,18 @@
 
 .card-7-contant {
     height: 400px;
-    width: 1234px;
-    background-image: url("/esset/card-7-img.jpg");
+        background-image: url("/esset/card-7-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
+    width: 100%;
 }
 
 /* --------------section-3-------------------------------- */
 
 .section-3-main {
     height: 932px;
-    width: 1536px;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #F8F9FA;
@@ -537,7 +559,7 @@
     padding-left: 16px;
     padding-right: 16px;
     height: 932px;
-    width: 1266px;
+    width: calc(100% - 270px); max-width: 1266px;
     background-color: transparent;
     border-left: 2px solid #e5edf5;
     border-bottom: 2px solid #e5edf5;
@@ -547,18 +569,17 @@
 
 .text-stats-section {
     height: 378px;
-    width: 1234px;
-   
+    width: 100%;
 }
 
 .text-heading {
     height: 120px;
-    width: 1234px;
-    background-color: transparent;
+        background-color: transparent;
     
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 #text-heading-txt {
@@ -578,18 +599,19 @@
     border-bottom: 2px solid #e5edf5;
     margin-top: 73px;
     height: 185px;
-    width: 1234px;
-    background-color: transparent;
+        background-color: transparent;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .stats-container-1 {
     height: 185px;
-    width: 305px;
-    background-color: transparent;
+        background-color: transparent;
     padding-top: 40px;
     padding-bottom: 40px;
+    width: auto;
+    flex: 1 1 0;
 }
 
 #stats-heading {
@@ -613,9 +635,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 472px;
-  width: 1234px;
-  overflow: hidden;
+    overflow: hidden;
   border-radius: 8px;
+    width: 100%;
 }
 
 .object-animation canvas {
@@ -626,7 +648,7 @@
 
 
 .section-4-heading {
-    width: 1536px;
+    width: 100%;
     height: 230px;
     background-color: transparent;
     display: flex;
@@ -634,7 +656,7 @@
 }
 
 .section-4-heading-in {
-    width: 1266px;
+    width: calc(100% - 270px); max-width: 1266px;
     height: 230px;
     background-color: transparent;
     border-left: 2px solid #e5edf5;
@@ -651,8 +673,8 @@
     color: black;
     font-size: 2rem;
     font-weight: 400;
-    width: 720px;
-    
+    width: 100%;
+    max-width: 720px;
 }
 
 .section-4-heading-txt {
@@ -666,7 +688,7 @@
 /* --------------section-4-------------- */
 
 .section-4-main {
-    width: 1536px;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -675,7 +697,7 @@
 }
 
 .section-4-in {
-    width: 1266px;
+    width: calc(100% - 270px); max-width: 1266px;
     padding-top: 96px;
     padding-left: 16px;
     padding-right: 16px;
@@ -696,39 +718,39 @@
 
 .section4-2 {
     background-color: transparent;
-    width: 1234px;
-    height: 200px;
+        height: 200px;
     display: flex;
+    width: 100%;
 }
 
 .section4-2-1 {
     background-color: transparent;
-    width: 617px;
-    height: 200px;
+        height: 200px;
+    width: auto;
+    flex: 1 1 0;
 }
 
 .section4-2-2 {
     background-color: transparent;
-    width: 617px;
-    height: 200px;
+        height: 200px;
+    width: auto;
+    flex: 1 1 0;
 }
 
 #section4-2-2-3 {
-    width: 627px;
-    height: 100px;
+        height: 100px;
     display: flex;
     align-items: center;
     padding-left: 6px;
     padding-top: 26px;
-
+    width: 100%;
 }
 
 #section4-2-2-txt {
     font-size: 1.2rem;
     color: #73777F;
-    width: 590px;
-    
-
+    width: 100%;
+    max-width: 590px;
 }
 
 
@@ -736,10 +758,10 @@
 
 #section4-2-1-in {
     background-color: transparent;
-    width: 617px;
-    height: 100px;
+        height: 100px;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 #section4-2-1-in-txt {
@@ -752,9 +774,9 @@
 
 #section4-2-1-in {
     background-color: transparent;
-    width: 617px;
-   
+       
     height: 100px;
+    width: 100%;
 }
 
 #section4-2-2-in-btn {
@@ -771,7 +793,7 @@
 /* --------------------section-5------------------------------ */
 
 .section-5 {
-    width: 1536px;
+    width: 100%;
     height: 700px;
     background-color: transparent;
     display: flex;
@@ -781,7 +803,7 @@
 }
 
 .section-5-in {
-    width: 1266px;
+    width: calc(100% - 270px); max-width: 1266px;
     height: 700px;
     background-color: transparent;
   
@@ -793,11 +815,10 @@
 
 .section-5-first-box {
     height: 40px;
-    width: 1234px;
-    background-color: transparent;
+        background-color: transparent;
     display: flex;
     align-items: center;
-    
+    width: 100%;
 }
 
 #sec-5-logo-box {
@@ -839,13 +860,13 @@
 
 
 .section-5-img {
-    width: 1234px;
-    height: 532px;
+        height: 532px;
     border-radius: 6px;
     margin-top: 30px;
     background-image: url("/esset/car-cros-sec-5-img-big.png");
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 
@@ -871,26 +892,27 @@
 /* ---------------------------section 6 ------------------------ */
 
 .section-6-main {
-    width: 1536px;
-    height: 570px;
-    background-color: transparent;
+    width: 100%;
+        background-color: transparent;
     display: flex;
     justify-content: center;
+    height: auto;
+    min-height: 570px;
 }
 
 .section-6-in {
-    width: 1266px;
-    height: 570px;
-    background-color: white;
+    width: calc(100% - 270px); max-width: 1266px;
+        background-color: white;
     border-left: 2px solid #e5edf5;
     border-right: 2px solid #e5edf5;
     padding-left: 16px;
     padding-right: 16px;
+    height: auto;
+    min-height: 570px;
 }
 
 .contenar-1 {
-    width: 1234px;
-    height: 72px;
+        height: 72px;
     padding-top: 17px;
     padding-bottom: 17px;
     border-top: 1px dotted #e5edf5;
@@ -898,6 +920,7 @@
     display: flex;
     align-items: center;
     background-color: transparent;
+    width: 100%;
 }
 
 .contaner-box {
@@ -935,21 +958,22 @@
 }
 
 .contenar-2 {
-    width: 1234px;
-    height: 160px;
-    margin-top: 40px;
+            margin-top: 40px;
     background-color: transparent;
     display: flex;
-    
-    
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    gap: 16px;
 }
 
 .contenar-2-box1 {
-    width: 400px;
-    height: 160px;
-    
+            
    
     background-color: transparent;
+    width: auto;
+    flex: 1 1 0;
+    height: auto;
 }
 
 .contenar-2-box1-logo {
@@ -966,8 +990,9 @@
 .contenar-2-box1-txt {
     display: flex;
     align-items: center;
-    height: 80px;
-    width: 370px;
+    width: 100%;
+    height: auto;
+    padding: 12px 0;
 }
 
 .contenar-2-box1-btn {
@@ -983,43 +1008,44 @@
 /* -------------------------section-8--------------------------- */
 
 .section-8 {
-    width: 1536px;
-    height: 1188px;
-    display: flex;
+    width: 100%;
+        display: flex;
     justify-content: center;
+    height: auto;
+    min-height: 1188px;
 }
 
 .section-8-in {
-    width: 1266px;
-    height: 1188px;
-    border-top: 2px solid #E5EDF5;
+    width: calc(100% - 270px); max-width: 1266px;
+        border-top: 2px solid #E5EDF5;
     border-left: 2px solid #E5EDF5;
     border-right: 2px solid #E5EDF5;
     border-bottom: 2px solid #E5EDF5;
-    
+    height: auto;
+    min-height: 1188px;
 }
 
 .section8-box1 {
-    width: 1234px;
-    height: 320px;
+        height: 320px;
     background-color: transparent;
     display: flex;
+    width: 100%;
 }
 
 .section8-box1-in1 {
     padding-left: 16px;
-    width: 550px;
-    height: 320px;
+        height: 320px;
     background-color: transparent;
+    width: 50%;
 }
 
 .section8-box1-in2 {
-    padding-left: 150px;
-    width: 617px;
-    height: 320px;
+            height: 320px;
     background-color: transparent;
     display: flex;
     align-items: center;
+    width: 50%;
+    padding-left: 100px;
 }
 
 #section8-box1-in1-btn {
@@ -1058,15 +1084,17 @@
     width: auto;
     display: flex;
     background-color: transparent;
+    margin-right: 16px;
 }
 
 .section8-conteainer-2-card {
     height: 448px;
     margin-left: 10px;
     border-radius: 6px;
-    width: 344px;
-    background-size: cover;
+        background-size: cover;
     background-repeat: no-repeat;
+    width: auto;
+    flex: 1 1 0;
 }
 
 
@@ -1076,17 +1104,16 @@
     width: auto;
     display: flex;
     background-color: transparent;
-
+    margin-right: 16px;
 }
 
 .section8-conteainer-3-box-1 {
     height: 80px;
     margin-left: 10px;
     
-    width: 344px;
-    background-color: transparent;
-
-
+        background-color: transparent;
+    width: auto;
+    flex: 1 1 0;
 }
 
 #section8-conteainer-3-box-1-txt {
@@ -1110,65 +1137,68 @@
 }
 
 .section8-conteainer-4 {
-    width: 1234px;
-    height: 168px;
+        height: 168px;
     margin-top: 100px;
     background-color: transparent;
     margin-left: 16px;
     display: flex;
+    width: auto;
+    margin-right: 16px;
 }
 
 .section8-conteainer-4-box1 {
-    width: 609px;
-    height: 168px;
+        height: 168px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 6px;
-   
+    width: auto;
+    flex: 1 1 0;
 }
 
 
 .section-9 {
-    width: 1536px;
-    height: 1650px;
-    display: flex;
+    width: 100%;
+        display: flex;
     justify-content: center;
     background-color: transparent;
+    height: auto;
+    min-height: 1650px;
 }
 
 .section-9-in {
-    width: 1266px;
-    height: 1650px;
-    background-color: transparent;
+    width: calc(100% - 270px); max-width: 1266px;
+        background-color: transparent;
     border-bottom: 2px dotted #E5EDF5;
     border-right: 2px solid #E5EDF5;
     border-left: 2px solid #E5EDF5;
     padding-left: 16px;
     padding-right: 16px;
+    height: auto;
+    min-height: 1650px;
 }
 
 .section-9-image {
-    width: 1232px;
-    height: 532px;
+        height: 532px;
     background-image: url(/esset/section-9-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 6px;
+    width: 100%;
 }
 
 .section-9-container-1 {
     margin-top: 30px;
-    width: 1233px;
-    height: 160px;
+        height: 160px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .section-9-container-1-sec-4-box-1 {
-    width: 400px;
-    height: 160px;
+        height: 160px;
     background-color: transparent;
+    width: 32%;
 }
 
 .section-9-container-1-logobox {
@@ -1206,18 +1236,19 @@
 
 .section9-container1 {
     margin-top: 80px;
-    width: 1232px;
-    height: 307px;
-    background-color: transparent;
+            background-color: transparent;
     
     justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 307px;
 }
 
 .outersheel {
     
-    width: 1232px;
-    display: flex;
+        display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .section9-container1-logo {
@@ -1251,37 +1282,38 @@
 
 .section9-continer3 {
     height: 100px;
-    width: 1232px;
-    margin-top: 50px;
+        margin-top: 50px;
     background-color: transparent;
     display: flex;
-
+    width: 100%;
 }
 
 .section9-continer3-box1 {
     height: 100px;
-    width: 308px;
-    background-size: cover;
+        background-size: cover;
     background-repeat: no-repeat;
-    
+    width: auto;
+    flex: 1 1 0;
 }
 
 /* ---------------------------------section-10------------------------------- */
 
 .section10 {
-    width: 1536px;
-    height: 850px;
-    background-color: transparent;
+    width: 100%;
+        background-color: transparent;
     display: flex;
     justify-content: center;
+    height: auto;
+    min-height: 850px;
 }
 .section-10-in {
-    height: 850px;
-    width: 1266px;
+        width: calc(100% - 270px); max-width: 1266px;
     border-left: 2px solid #DCE4EB;
     border-right: 2px solid #DCE4EB;
     border-bottom: 2px solid #DCE4EB;
     background-color: transparent;
+    height: auto;
+    min-height: 850px;
 }
 
 .section10-container1 {
@@ -1337,23 +1369,24 @@
 }
 
 .section-10-image {
-    width: 1232px;
-    margin-left: 16px;
+        margin-left: 16px;
     height: 460px;
     border-radius: 6px;
     background-image: url(/esset/section-10-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    width: calc(100% - 32px);
 }
 
 /* --------------------------------section-11------------------------- */
 
 .section-11 {
-    width: 1536px;
-    height: 1000px;
-    background-color: transparent;
+    width: 100%;
+        background-color: transparent;
     display: flex;
     justify-content: center;
+    height: auto;
+    min-height: 1000px;
 }
 
 .section-11-in {
@@ -1362,35 +1395,36 @@
     /* padding-left: 16px;
     padding-right: 16px; */
     /* padding-bottom: 93px; */
-    width: 1266px;
-    height: 1050px;
-    background-color: transparent;
+    width: calc(100% - 270px); max-width: 1266px;
+        background-color: transparent;
+    height: auto;
+    min-height: 1050px;
 }
 
 .section-11-image {
-    width: 1232px;
-    height: 720px;
+        height: 720px;
     background-image: url(/esset/section-11-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 16px;
+    width: calc(100% - 32px);
 }
 
 .section-12 {
-    width: 1536px;
-    height: 400px;
-    background-color: #F8FAFD;
+    width: 100%;
+        background-color: #F8FAFD;
     display: flex;
     justify-content: center;
+    height: auto;
+    min-height: 400px;
 }
 
 .section12-in {
     border-left: 2px solid #DCE4EB;
     border-right: 2px solid #DCE4EB;
-    width: 1266px;
-    height: 400px;
-    
-    
+    width: calc(100% - 270px); max-width: 1266px;
+    height: auto;
+    min-height: 400px;
 }
 
 .section-12-sec2 {
@@ -1401,44 +1435,48 @@
 
 .section12-1 {
     margin-left: 16px;
-    width: 300px;
-    height: 300px;
-    background-color: transparent;
+            background-color: transparent;
+    width: auto;
+    flex: 1 1 0;
+    height: auto;
 }
 
 .section12-2 {
-    width: 300px;
-    height: 300px;
-    background-color: transparent;
+            background-color: transparent;
+    width: auto;
+    flex: 1 1 0;
+    height: auto;
 }
 
 .section12-3 {
-    width: 300px;
-    height: 300px;
-    background-color: transparent;
+            background-color: transparent;
+    width: auto;
+    flex: 1 1 0;
+    height: auto;
 }
 
 .section12-4 {
     margin-right: 16px;
-    width: 300px;
-    height: 300px;
-    background-color: transparent;
+            background-color: transparent;
+    width: auto;
+    flex: 1 1 0;
+    height: auto;
 }
 
 .section12-1-1 {
     height: 16px;
-    width: 300px;
-    color: rgb(80, 97, 122);
+        color: rgb(80, 97, 122);
     margin-top: 8px;
+    width: auto;
 }
 
 .section12-1-2 {
     height: 22px;
     font-weight: 510;
-    width: 300px;
-    color: rgb(6, 27, 49);
+        color: rgb(6, 27, 49);
 
     margin-top: 30px;
+    width: auto;
 }
 
 .section12-4-button {
@@ -1463,5 +1501,6 @@
 
 .section-12-sec1 {
     height: 130px;
-   width: 900px;
+    width: 100%;
+    max-width: 900px;
 }
